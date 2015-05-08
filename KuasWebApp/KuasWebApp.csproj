@@ -158,6 +158,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\KuasCoreTests\KuasCoreTests.csproj">
+      <Project>{d1e916ca-f60b-4a04-9f79-4e0a6392277a}</Project>
+      <Name>KuasCoreTests</Name>
+    </ProjectReference>
     <ProjectReference Include="..\KuasCore\KuasCore.csproj">
       <Project>{c4bbce56-ecd7-494c-9731-5093f529df69}</Project>
       <Name>KuasCore</Name>

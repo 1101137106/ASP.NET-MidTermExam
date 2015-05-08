@@ -29,22 +29,6 @@ namespace KuasWebApp.Controllers
             }
         }
 
-        [HttpPut]
-        public Course UpdateCourse(Course course)
-        {
-            CheckCourseIsNullThrowException(course);
-
-            try
-            {
-                CourseService.UpdateCourse(course);
-                return CourseService.GetCourseById(course.CourseID);
-            }
-            catch (Exception)
-            {
-                throw new HttpResponseException(HttpStatusCode.InternalServerError);
-            }
-        }
-
         [HttpDelete]
         public void DeleteCourse(Course course)
         {
